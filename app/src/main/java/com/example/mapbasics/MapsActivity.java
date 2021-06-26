@@ -43,5 +43,13 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         mMap.addMarker(new MarkerOptions().position(sydney)
                 .title("This is a custom marker made by, Vinay Nagalgaonkar"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+        /* Hands-on for showing some other location on the map */
+        /*
+        LatLng mtEverest = new LatLng(27.989672773303642, 86.92445996187733);
+        mMap.addMarker(new MarkerOptions().position(mtEverest)
+                .title("Tallest Peak"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(mtEverest));
+       */
     }
 }
