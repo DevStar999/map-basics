@@ -31,3 +31,4 @@ gradlew.bat
 # In app folder
 app/src/androidTest/java/com/example/mapbasics/ExampleInstrumentedTest.java
 app/src/test/java/com/example/mapbasics/ExampleUnitTest.java
+app/src/release/res/values/google_maps_api.xml
