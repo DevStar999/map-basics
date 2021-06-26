@@ -40,6 +40,12 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        /*
+        Setting map type to how we would get it's image on satellite, also other options are
+        available as well
+        */
+        mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
+
         // Add a marker in Sydney and move the camera
         LatLng sydney = new LatLng(-34, 151);
         mMap.addMarker(new MarkerOptions().position(sydney)
