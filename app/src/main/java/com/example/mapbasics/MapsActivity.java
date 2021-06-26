@@ -4,6 +4,7 @@ import androidx.fragment.app.FragmentActivity;
 
 import android.os.Bundle;
 
+import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
@@ -45,7 +46,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 .title("This is a custom marker made by, Vinay Nagalgaonkar")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_YELLOW)));
                 /* Using a different color icon for marked location on the map as above */
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        /* We can change the default zoom on the current location as follows */
+        mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(sydney, 10)); // Value range : 1 to 20
 
         /* Hands-on for showing some other location on the map */
         /*
